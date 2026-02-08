@@ -1,0 +1,48 @@
+COMPLETE 15-DIMENSIONAL CANCER MODEL SYSTEM
+============================================================
+
+Equation 1: Sensitive cancer cells (N1)
+df1/dt = -I1*N1*beta1/(0.01*N1 + 0.01*N2 + 0.01*Q + 0.01*R1 + 0.01*R2 + 0.01*S + 1) - N1*kappa_Q*(0.5*H + 1) - N1*kappa_S*(1.3 - 0.3*G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) + N1*lambda1*(1 - (N1 + N2 + Q + R1 + R2 + S)/K)*(0.1*M + 1)/(M*acidosis_factor + 1) - N1*omega_R1*(2 - G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) - N1*omega_R2*(2 - G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) - N1*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I)
+
+Equation 2: Partially resistant cells (N2)
+df2/dt = -0.5*I1*N2*beta1/(0.01*N1 + 0.01*N2 + 0.01*Q + 0.01*R1 + 0.01*R2 + 0.01*S + 1) - N2*kappa_Q*(0.5*H + 1) + N2*lambda2*(1 - (N1 + N2 + Q + R1 + R2 + S)/K)*(0.1*M + 1)/(M*acidosis_factor + 1) - N2*(0.7*eta_C*u_C + 0.7*eta_E*u_E + 0.7*eta_H*u_H + 0.7*eta_I*u_I)
+
+Equation 3: Cytotoxic immune cells (I1)
+df3/dt = -I1*I2*beta2/(I1 + 1) - I1*delta_I*(0.2*H + 1) + 0.1*I1*eta_I*u_I + phi1 + phi2*(N1 + N2 + Q + R1 + R2 + S)/(0.01*N1 + 0.01*N2 + 0.01*Q + 0.01*R1 + 0.01*R2 + 0.01*S + 1)
+
+Equation 4: Regulatory immune cells (I2)
+df4/dt = -I2*delta_I*(0.1*H + 1) - 0.1*I2*eta_I*u_I + phi3*(N1 + N2 + Q + R1 + R2 + S)/(0.01*N1 + 0.01*N2 + 0.01*Q + 0.01*R1 + 0.01*R2 + 0.01*S + 1)
+
+Equation 5: Metastatic potential (P)
+df5/dt = -P*delta_P + gamma*(0.5*H + 1)*(0.3*M + 1)*(N1 + N2 + Q + R1 + R2 + S)
+
+Equation 6: Angiogenesis factors (A)
+df6/dt = -A*delta_A + alpha_A*(H + 1)*(N1 + N2 + Q + R1 + R2 + S)/(0.01*N1 + 0.01*N2 + 0.01*Q + 0.01*R1 + 0.01*R2 + 0.01*S + 1)
+
+Equation 7: Quiescent cells (Q)
+df7/dt = -Q*lambda_Q*(0.2*A + 1)/(0.5*H + 1) + kappa_Q*(0.5*H + 1)*(N1 + N2)
+
+Equation 8: Hormone resistant cells (R1)
+df8/dt = -I1*R1*beta1*rho1 + N1*omega_R1*(2 - G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) + R1*lambdaR1*(1 - (N1 + N2 + Q + R1 + R2 + S)/K)
+
+Equation 9: Multi-drug resistant cells (R2)
+df9/dt = -I1*R2*beta1*rho2 + N1*omega_R2*(2 - G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) + R2*lambdaR2*(1 - (N1 + N2 + Q + R1 + R2 + S)/K)
+
+Equation 10: Senescent cells (S)
+df10/dt = N1*kappa_S*(1.3 - 0.3*G)*(eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I) - S*delta_S
+
+Equation 11: Active drug concentration (D)
+df11/dt = -D*k_el + u_C + u_E + u_H + u_I
+
+Equation 12: Metabolized drug (Dm)
+df12/dt = D*k_el - Dm*clearance
+
+Equation 13: Genetic stability (G)
+df13/dt = -G*mu*(0.5*H + eta_C*u_C + eta_E*u_E + eta_H*u_H + eta_I*u_I + 1) - 0.001*G + 0.001
+
+Equation 14: Metabolic state (M)
+df14/dt = H*M*metabolic_switch_rate - 0.05*M
+
+Equation 15: Hypoxia level (H)
+df15/dt = -0.1*A*H + 0.1*Max(0, (-hypoxia_threshold + (N1 + N2 + Q + R1 + R2 + S)/K)/(1 - hypoxia_threshold))
+

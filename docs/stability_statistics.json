@@ -1,0 +1,10 @@
+{
+  "total_parameter_sets": 15,
+  "stable_sets": 7,
+  "unstable_sets": 8,
+  "stability_rate": 0.4666666666666667,
+  "mean_max_real_part": 0.0021127110559748725,
+  "std_max_real_part": 0.0059259230884603,
+  "mean_stable_eigenvalues": 14.133333333333333,
+  "analysis_timestamp": "2025-08-15T20:14:12.798211"
+}

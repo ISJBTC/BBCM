@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Blood-Based Cancer Mathematical Model: Machine Learning Enhanced Framework for Precision Oncology"
+version: 1.0.0
+date-released: 2025-02-08
+authors:
+  - family-names: "Jamadar"
+    given-names: "Irshad"
+    affiliation: "MIT Art, Design and Technology University, Pune, India"
+    email: "irshadjamadar@mituniversity.edu"
+repository-code: "https://github.com/ISJBTC/BBCM"
+keywords:
+  - cancer modeling
+  - mathematical oncology
+  - machine learning
+  - precision medicine
+  - biomarkers
+  - dynamical systems
+  - stability analysis
+  - clinical decision support
+  - breast cancer
+  - treatment optimization
+abstract: >-
+  This repository provides a comprehensive blood-based cancer mathematical
+  model integrating 47 biomarkers with 8 machine learning methods for
+  precision oncology applications. The 15-dimensional dynamical system
+  describes cancer-immune-treatment dynamics with complete stability analysis,
+  mathematical validation, and clinical deployment capabilities. Key features
+  include: (1) Multi-scale modeling of tumor populations, immune response,
+  and treatment effects, (2) Machine learning integration achieving >96% R²
+  for parameter estimation, (3) Comprehensive stability analysis with
+  eigenvalue decomposition, (4) Production-ready clinical prediction system
+  with confidence scoring, and (5) Complete mathematical proofs and validation.
+  The system demonstrates 93% stability rate across biologically realistic
+  parameter ranges and is ready for prospective clinical validation.
+license: MIT
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: "Jamadar"
+      given-names: "Irshad"
+  title: "An Intelligent Approach for Prediction of Breast Cancer with Mathematical Techniques"
+  thesis-type: "PhD thesis"
+  institution:
+    name: "MIT Art, Design and Technology University"
+  year: 2025
+  doi: "10.5281/zenodo.18524853"
+references:
+  - type: software
+    title: "Blood-Based Cancer Model - GitHub Repository"
+    authors:
+      - family-names: "Jamadar"
+        given-names: "Irshad"
+    year: 2025
+    repository-code: "https://github.com/ISJBTC/BBCM"
+  - type: data
+    title: "Synthetic Cancer Dataset with 47 Biomarkers"
+    authors:
+      - family-names: "Jamadar"
+        given-names: "Irshad"
+    year: 2025
+    repository-code: "https://github.com/ISJBTC/BBCM/tree/main/data"

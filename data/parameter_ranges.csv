@@ -1,0 +1,39 @@
+Parameter,Description,Units,Min_Value,Max_Value,Range_Width,Geometric_Mean
+lambda1,Growth rate of sensitive cancer cells,month⁻¹,0.01,0.12,0.11,0.034641016151377546
+lambda2,Growth rate of partially resistant cells,month⁻¹,0.005,0.08,0.075,0.02
+lambdaR1,Growth rate of hormone resistant cells,month⁻¹,0.003,0.04,0.037,0.010954451150103323
+lambdaR2,Growth rate of multi-drug resistant cells,month⁻¹,0.001,0.025,0.024,0.005
+K,Carrying capacity (maximum tumor burden),cells,500.0,5000.0,4500.0,1581.1388300841897
+beta1,Immune cytotoxic killing rate,month⁻¹,0.002,0.08,0.078,0.012649110640673518
+beta2,Immune suppression rate,month⁻¹,0.01,0.4,0.39,0.06324555320336758
+phi1,Basal immune cell production rate,cells/month,0.02,0.15,0.13,0.05477225575051661
+phi2,Tumor-induced immune production rate,cells/month,0.005,0.08,0.075,0.02
+phi3,Regulatory immune cell production rate,cells/month,0.01,0.06,0.049999999999999996,0.02449489742783178
+delta_I,Immune cell death rate,month⁻¹,0.03,0.2,0.17,0.07745966692414834
+rho1,Immune resistance factor for R1 cells,dimensionless,0.1,0.6,0.5,0.2449489742783178
+rho2,Immune resistance factor for R2 cells,dimensionless,0.05,0.4,0.35000000000000003,0.14142135623730953
+omega_R1,Hormone resistance mutation rate,month⁻¹,0.0003,0.008,0.0077,0.0015491933384829666
+omega_R2,Multi-drug resistance mutation rate,month⁻¹,0.0002,0.006,0.0058000000000000005,0.0010954451150103322
+mu,Genetic instability rate,month⁻¹,0.002,0.025,0.023,0.007071067811865475
+eta_E,Hormone therapy effectiveness,dimensionless,0.15,0.85,0.7,0.3570714214271425
+eta_C,Chemotherapy effectiveness,dimensionless,0.2,0.75,0.55,0.3872983346207417
+eta_H,HER2 therapy effectiveness,dimensionless,0.25,0.9,0.65,0.4743416490252569
+eta_I,Immunotherapy effectiveness,dimensionless,0.1,0.65,0.55,0.25495097567963926
+u_E,Hormone therapy dose,dimensionless,0.0,1.0,1.0,0.5
+u_C,Chemotherapy dose,dimensionless,0.0,1.0,1.0,0.5
+u_H,HER2 therapy dose,dimensionless,0.0,1.0,1.0,0.5
+u_I,Immunotherapy dose,dimensionless,0.0,1.0,1.0,0.5
+gamma,Metastatic seeding rate,month⁻¹,0.0002,0.01,0.0098,0.0014142135623730952
+delta_P,Metastatic potential clearance rate,month⁻¹,0.02,0.15,0.13,0.05477225575051661
+alpha_A,Angiogenesis factor production rate,month⁻¹,0.003,0.05,0.047,0.012247448713915891
+delta_A,Angiogenesis factor decay rate,month⁻¹,0.015,0.08,0.065,0.034641016151377546
+kappa_Q,Quiescence induction rate,month⁻¹,0.001,0.03,0.028999999999999998,0.005477225575051661
+lambda_Q,Quiescence reactivation rate,month⁻¹,0.002,0.02,0.018000000000000002,0.006324555320336759
+kappa_S,Senescence induction rate,month⁻¹,0.0005,0.015,0.014499999999999999,0.0027386127875258306
+delta_S,Senescence clearance rate,month⁻¹,0.003,0.025,0.022000000000000002,0.008660254037844387
+k_el,Drug elimination rate constant,month⁻¹,0.05,0.3,0.25,0.1224744871391589
+clearance,Drug clearance rate,month⁻¹,0.08,0.4,0.32,0.17888543819998318
+hypoxia_threshold,Tumor burden threshold for hypoxia,dimensionless,0.4,0.8,0.4,0.5656854249492381
+metabolic_switch_rate,Metabolic reprogramming rate,month⁻¹,0.03,0.15,0.12,0.0670820393249937
+acidosis_factor,pH-mediated growth inhibition factor,dimensionless,0.1,0.35,0.24999999999999997,0.18708286933869706
+alpha_mem,Memory parameter for fractional dynamics,dimensionless,0.75,0.95,0.19999999999999996,0.8440971508067066
